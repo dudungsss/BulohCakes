@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Buloh Cakes - Dine In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div>
+    <h1>Buloh Cakes - Tangerang</h1>
+    <p>Open today, 09:00 - 21.00</p>
+  </div>
+</header>
+
+<div class="table-number">
+  Table Number: <strong>1</strong>
+</div>
+
+<nav class="category">
+  <span class="tab active" data-filter="all">All</span>
+  <span class="tab" data-filter="food">Makanan</span>
+  <span class="tab" data-filter="drink">Minuman</span>
+</nav>
+
+<section class="menu">
+  <h2>Eaterys and Beverages</h2>
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<div class="cart">
+  <div class="cart-info">
+    <span id="cart-count">0 item</span>
+    <strong>Rp <span id="cart-total">0</span></strong>
+  </div>
+  <button id="checkout">View cart</button>
+</div>
+
+<div class="cart-page" id="cartPage">
+  <div class="cart-header">
+    <h2>Pesanan Kamu</h2>
+    <button id="closeCart">✕</button>
+  </div>
+
+  <div class="cart-list" id="cartList"></div>
+
+  <div class="cart-footer">
+    <p>Total: <strong>Rp <span id="cartPageTotal">0</span></strong></p>
+    <button class="cancel-all" id="cancelAll">Cancel All</button>
+    <button class="confirm">Confirm Order</button>
+  </div>
+</div>
+
+<script src="js/menu-data.js"></script>
+<script src="js/render-menu.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
