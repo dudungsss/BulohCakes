@@ -1,0 +1,15 @@
+# Dependency (Paling Penting!)
+node_modules/
+dist/
+build/
+.cache/
+
+# Editor / System
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+
+# Environment Variables (Kalau ada API Key)
+.env
+.env.local
